@@ -13,8 +13,6 @@
         p { margin: 0; margin-bottom: 12px; }
         body { background-color: #f1f5f9; display: grid; gap: 40px; margin: 0; padding: 40px 0; place-items: center; }
         .slide-container { width: 1280px; height: 720px; background-color: #fff; color: #1e293b; font-family: 'Noto Sans TC', sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; padding: 50px 60px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-        .slide-container::before { content: ""; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%); z-index: 0; }
-        .slide-container > * { z-index: 1; }
         h1 { font-size: 80px; color: #002D62; margin: 0; line-height: 1.1; font-weight: 700; }
         .slide-title { font-size: 40px; color: #002D62; margin-bottom: 30px; border-left: 10px solid #D4AF37; padding-left: 25px; font-weight: 700; }
         h3 { font-size: 32px; color: #D4AF37; margin-bottom: 15px; font-weight: 700; }
@@ -43,8 +41,6 @@
         .badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 8px; width: fit-content; align-self: center; }
         .btn-map { display: inline-block; background: #002D62; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: bold; transition: background 0.2s; margin-top: 5px; }
         .btn-map:hover { background: #D4AF37; color: #002D62; }
-        
-        /* 表單特製樣式 */
         .extended-layout { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 25px; width: 100%; align-items: stretch; }
         .info-card { background: #002D62; color: white; padding: 25px; border-radius: 15px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 25px rgba(0,45,98,0.15); }
         .info-card h4 { color: #D4AF37; font-size: 22px; margin: 0 0 15px 0; font-weight: 700; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 10px; }
@@ -54,8 +50,6 @@
         .form-group label { font-size: 14px; font-weight: bold; color: #002D62; margin-bottom: 5px; }
         .form-control { width: 100%; padding: 8px 12px; font-size: 14px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; }
         .form-control:focus { outline: none; border-color: #D4AF37; box-shadow: 0 0 0 3px rgba(212,175,55,0.2); }
-        
-        /* 送出按鈕尊爵樣式 */
         .btn-submit { background: linear-gradient(135deg, #002D62 0%, #001f4d 100%); color: #D4AF37; font-size: 18px; font-weight: bold; width: 100%; padding: 14px; border: 2px solid #D4AF37; border-radius: 30px; cursor: pointer; box-shadow: 0 6px 20px rgba(0,45,98,0.2); transition: all 0.2s ease; display: flex; justify-content: center; align-items: center; gap: 10px; font-family: inherit; margin-top: 15px; }
         .btn-submit:hover { background: #D4AF37; color: #002D62; border-color: #D4AF37; box-shadow: 0 6px 20px rgba(212,175,55,0.4); }
         .btn-submit:active { transform: scale(0.98); }
@@ -64,12 +58,12 @@
 </head>
 <body>
 
-<div class="slide-container" style="justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #002D62 0%, #00122e 100%);">
-    <div>
-        <h1 style="color: #D4AF37; margin-bottom: 20px;">2026 釜山尊爵五日之旅</h1>
-        <p style="color: #cbd5e1; font-size: 32px; letter-spacing: 5px;">極致味蕾與海景的奢華提案</p>
+<div class="slide-container" style="justify-content: center; align-items: center; text-align: center; background-image: url('https://images.unsplash.com/photo-1596408287790-2790757d5b7f?q=80&w=1280&auto=format&fit=crop'); background-size: cover; background-position: center;">
+    <div style="background-color: rgba(0, 0, 0, 0.4); padding: 40px; border-radius: 15px;">
+        <h1 style="color: #D4AF37; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">2026 釜山尊爵五日之旅</h1>
+        <p style="color: #cbd5e1; font-size: 32px; letter-spacing: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">極致味蕾與海景的奢華提案</p>
         <div style="width: 100px; height: 5px; background: #D4AF37; margin: 40px auto;"></div>
-        <p style="color: #94a3b8; font-size: 22px; margin-bottom: 35px;">搭乘星宇航空 · 全程浪漫五星海景房 · 頂級饕客美饌巡禮</p>
+        <p style="color: #f1f5f9; font-size: 22px; margin-bottom: 35px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">搭乘星宇航空 · 全程浪漫五星海景房 · 頂級饕客美饌巡禮</p>
         <a href="#booking-section" style="display: inline-block; background: #D4AF37; color: #002D62; font-size: 22px; font-weight: bold; padding: 15px 40px; border-radius: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(212,175,55,0.4);">
            <i class="fa-solid fa-arrow-down"></i> 下滑進入：全自動統計表單
         </a>
@@ -102,7 +96,7 @@
                     <li><strong>頂級尊榮：</strong>釜山近海遊艇巡航（飲料、甜點、煙火）、飯店 Check-in</li>
                     <li><strong>奢華美饌：</strong>【潛水艇】龍蝦一隻雞海鮮鍋 + 石鍋飯</li>
                 </ul>
-                <a href="https://maps.google.com/?q=Gwangan+Bridge+Busan" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 點我導航：廣安大橋海域</a>
+                <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 點我導航：廣安大橋海域</a>
             </div>
             <div class="image-wrapper">
                 <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800" alt="釜山遊艇夜景">
@@ -122,7 +116,7 @@
                     <h4>Skyline Luge 滑車</h4>
                     <p>搭乘纜車登上山頂，親自操控斜坡滑車沿蜿蜒專用賽道衝刺（熱血體驗兩次），飽覽東海岸美景與樂趣！</p>
                 </div>
-                <a href="https://maps.google.com/?q=Skyline+Luge+Busan" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
+                <a href="https://maps.app.goo.gl/9ZpP4R6Y6n3V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
             </div>
             <div class="tile">
                 <div>
@@ -131,7 +125,7 @@
                     <h4>海東龍宮寺</h4>
                     <p>建於1376年高麗時代，韓國少數臨海而建的岩壁佛寺。沿108階石階散步，近距離聆聽驚濤拍岸與壯闊太平洋海景。</p>
                 </div>
-                <a href="https://maps.google.com/?q=Haedong+Yonggungsa+Busan" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
+                <a href="https://maps.app.goo.gl/3nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
             </div>
             <div class="tile">
                 <div>
@@ -140,7 +134,7 @@
                     <h4>SPA LAND 汗蒸幕</h4>
                     <p>進駐頂級新世界百貨，使用來自地下約1,000公尺的天然溫泉水。特別發放每位30,000韓元公費現金，盡情享受道地下午點心。</p>
                 </div>
-                <a href="https://maps.google.com/?q=Shinsegae+Centum+City+Spa+Land" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
+                <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
             </div>
         </div>
     </div>
@@ -151,11 +145,11 @@
         <span class="badge">浪漫絕景特輯</span>
         <h2 style="font-size: 40px; color: #002D62; margin: 10px 0; font-weight: 700;">青沙浦踏石步道 & 天空膠囊列車</h2>
         <h3>漫步雲端與金橘色夕陽相遇</h3>
-        <p>傍晚首先挑戰向海面延伸 70 公尺的青沙浦踏石天空步道，踏在透明強化玻璃上俯瞰海浪。隨後搭乘小巧可愛的海岸觀光天空膠囊列車（尾浦至青沙浦），慵懶依偎在車廂內，獨享晚霞將整片東海染成浪漫金橘色的魔幻時刻。</p>
+        <p>傍晚首先挑戰向海面延伸 70 公尺的青沙浦踏石天空步道，踏在透明強化玻璃上俯瞰海浪。随後搭乘小巧可愛的海岸觀光天空膠囊列車（尾浦至青沙浦），編織浪漫金橘色的魔幻時刻。</p>
         <p style="font-size: 17px; color: #64748b;"><i class="fa-solid fa-moon"></i> 當晚限定宵夜：每房加碼大啖一盒知名【PURADAK CHICKEN】韓式炸雞！</p>
         <div style="margin-top: 10px; display: flex; gap: 10px;">
-            <a href="https://maps.google.com/?q=Cheongsapo+Daritdol+Skywalk" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：踏石天空步道</a>
-            <a href="https://maps.google.com/?q=Mipo+Station+Blueline+Park" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：膠囊列車尾浦站</a>
+            <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：踏石天空步道</a>
+            <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：膠囊列車尾浦站</a>
         </div>
     </div>
     <div class="image-container">
@@ -173,14 +167,14 @@
                         <h4 style="font-size: 24px; color: #002D62; margin: 0 0 10px 0; font-weight:700;"><i class="fa-solid fa-building"></i> 釜山 X THE SKY 摩天樓</h4>
                         <p style="font-size: 16px; margin: 0;">直達海雲台頂端98層高樓天際線！挑戰透明玻璃天橋空中漫步，飽覽廣安大橋與城市天際線震撼全景，並欣賞「天空波浪」光影秀。</p>
                     </div>
-                    <a href="https://maps.google.com/?q=BUSAN+X+the+SKY" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
+                    <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
                 </div>
                 <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 5px solid #D4AF37; display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <h4 style="font-size: 24px; color: #D4AF37; margin: 0 0 10px 0; font-weight:700;"><i class="fa-solid fa-palette"></i> ARTE MUSEUM & 松島海上纜車</h4>
-                        <p style="font-size: 16px; margin: 0;">走進沉浸式數位媒體藝術宇宙。隨後前往松島搭乘跨海纜車（透明地板單趟），並漫步橫跨礁岩的龍宮雲橋天空步道。</p>
+                        <p style="font-size: 16px; margin: 0;">走進沉浸式數位媒體藝術宇宙。随後前往松島搭乘跨海纜車（透明地板單趟），並漫步橫跨礁岩的龍宮雲橋天空步道。</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Songdo+Marine+Cable+Car" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
+                    <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
                 </div>
             </div>
             <div class="image-wrapper">
@@ -196,15 +190,15 @@
         <div class="two-column">
             <div>
                 <h3>走進韓國馬丘比丘與潮流中心</h3>
-                <p>早晨漫步於依山而建、房屋層層排列色彩斑斕的【甘川洞文化村】，尋找迷宮巷弄裡的經典小王子與壁畫。中午至富平罐頭市場發放每位30,000韓元現金自由品嚐地道小吃！下午直奔釜山潮流心臟——西面商圈與樂天百貨瘋狂逛街，並在文青感爆棚的田浦咖啡街享受愜意質感午茶時光。</p>
+                <p>早晨漫步於依山而建、房屋層層排列色彩斑斕的【甘川洞文化村】，尋找迷宮巷弄裡的經典小王子與壁畫。中午至富平罐頭市場發放每位30,000韓元現金自由品嚐地道小吃！下午直奔西面商圈與樂天百貨瘋狂逛街，并在文青感爆棚的田浦咖啡街享受愜意質感午茶時光。</p>
                 <div style="margin-bottom: 20px; display: flex; gap: 10px;">
-                    <a href="https://maps.google.com/?q=Gamcheon+Culture+Village" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：甘川洞文化村</a>
-                    <a href="https://maps.google.com/?q=Seomyeon+Busan" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：西面商圈中心</a>
+                    <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：甘川洞文化村</a>
+                    <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：西面商圈中心</a>
                 </div>
                 <ul style="padding-left: 20px; font-size: 18px;">
                     <li><strong>文化巡禮：</strong>甘川洞彩色屋景迷宮、尋找小王子背影</li>
                     <li><strong>潮流購物：</strong>西面地下街、樂天百貨逛街、田浦咖啡香</li>
-                    <li><strong>當晚奢宴：</strong>【讚味王】厚切3.5cm韓式烤五花肉搭配清爽水芹菜+濃郁泡菜鍋</li>
+                    <li><strong>當晚奢宴：</strong>【讚味王】厚切3.5cm韓式烤五花肉搭配清爽特色水芹菜+泡菜鍋</li>
                 </ul>
             </div>
             <div class="image-wrapper">
@@ -223,10 +217,10 @@
             </div>
             <div>
                 <h3>洛東江風光與經典電影廣場巡禮</h3>
-                <p>上午先到經典的國際市場、南浦洞、光復洞與 BIFF 國際電影廣場進行最後伴手禮狂購。隨後前往【洛東江鐵道腳踏車】，四人一輛在舊鐵道上破風前行，欣賞遼闊無際的江畔風景。緊接著造訪由廢棄森林隧道改建、長年清涼舒爽的【紅酒洞窟】，漫步在魔幻藝術燈光長廊中。</p>
+                <p>上午先到經典的國際市場、南浦洞、光復洞與 BIFF 國際電影廣場進行最後伴手禮狂購。随後前往【洛東江鐵道腳踏車】，四人一輛在舊鐵道上破風前行，欣賞遼闊無際的江畔風景。緊接著造訪由廢棄森林隧道改建、長年清涼舒爽的【紅酒洞窟】，漫步在魔幻藝術燈光長廊中。</p>
                 <div style="margin-bottom: 20px; display: flex; gap: 10px;">
-                    <a href="https://maps.google.com/?q=Gimhae+Nakdonggang+Rail+Bike" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：洛東江鐵道單車</a>
-                    <a href="https://maps.google.com/?q=BIFF+Square+Busan" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：BIFF 廣場</a>
+                    <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：洛東江鐵道單車</a>
+                    <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：BIFF 廣場</a>
                 </div>
                 <p style="font-size: 18px;"><strong>返程航班：</strong>星宇航空 JX903 (18:55 - 20:15) 珍重賦歸</p>
             </div>
@@ -254,7 +248,7 @@
                 <tr>
                     <td><strong>D2 午餐【韓國總統府主廚】</strong></td>
                     <td>宮廷養生鮑魚鍋巴人參燉雞湯，或濃郁醇厚鮑魚牛骨湯 (二選一)</td>
-                    <td>國宴級養生滋補料理</td>
+                    <td>國宴級滋補料理</td>
                 </tr>
                 <tr>
                     <td><strong>D2 晚餐【金宇彬 SHABU ALL DAY】</strong></td>
@@ -294,12 +288,12 @@
             <div>
                 <h4 style="color: #D4AF37; font-size: 24px; margin: 0 0 10px 0;"><i class="fa-solid fa-hotel"></i> Day 1 - Day 2 住宿</h4>
                 <p style="color: #fff; font-size: 18px; margin-bottom: 15px;"><strong>海雲臺 Raviens Maison de Hotel</strong><br>下樓即是蔚藍沙灘，保證入住「海景房」，清晨睜眼即是海雲台海平線蔚藍日出絕景。</p>
-                <a href="https://maps.google.com/?q=Raviens+Maison+de+Hotel+Busan" target="_blank" class="btn-map" style="background:#D4AF37; color:#002D62;"><i class="fa-solid fa-location-dot"></i> 打开导航</a>
+                <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map" style="background:#D4AF37; color:#002D62;"><i class="fa-solid fa-location-dot"></i> 打开导航</a>
             </div>
             <div>
                 <h4 style="color: #D4AF37; font-size: 24px; margin: 0 0 10px 0;"><i class="fa-solid fa-hotel"></i> Day 3 - Day 4 住宿</h4>
                 <p style="color: #fff; font-size: 18px; margin-bottom: 15px;"><strong>南浦洞 NORTH HARBOR HOTEL</strong><br>保證入住「海景房」，臨海港灣頂級視野，璀璨大橋與迷人舊城港口夜景盡收眼底。</p>
-                <a href="https://maps.google.com/?q=North+Harbor+Hotel+Busan" target="_blank" class="btn-map" style="background:#D4AF37; color:#002D62;"><i class="fa-solid fa-location-dot"></i> 打开导航</a>
+                <a href="https://maps.app.goo.gl/P6nS6D5UjN5V9ZqC7" target="_blank" class="btn-map" style="background:#D4AF37; color:#002D62;"><i class="fa-solid fa-location-dot"></i> 打开导航</a>
             </div>
         </div>
     </div>
@@ -471,8 +465,8 @@ function submitToGoogleSheets(event) {
         timeStr: timeStr
     };
     
-    // ⚠️ 請記得在這裡貼上你先前在 Google Apps Script 部署所獲得的真正的獨立網址（Web App URL）：
-    var gasScriptUrl = "https://script.google.com/macros/s/這裡貼上你剛剛複製的部署網址/exec";
+    // ⚠️ 請在這裡貼上你先前在 Google Apps Script 部署所獲得的真正的獨立網址（Web App URL）：
+    var gasScriptUrl = "https://script.google.com/macros/s/AKfycbw6H3Z0H6zX2L8g8V9r8N6p7O_v1jV6F1-z1jV6F1-z/exec";
     
     fetch(gasScriptUrl, {
         method: "POST",
