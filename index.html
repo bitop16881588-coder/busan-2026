@@ -43,6 +43,18 @@
         .badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 8px; width: fit-content; align-self: center; }
         .btn-map { display: inline-block; background: #002D62; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: bold; transition: background 0.2s; margin-top: 5px; }
         .btn-map:hover { background: #D4AF37; color: #002D62; }
+        
+        /* 延伸表單特製樣式 */
+        .extended-layout { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 30px; width: 100%; align-items: start; }
+        .info-card { background: #002D62; color: white; padding: 30px; border-radius: 15px; height: 100%; box-shadow: 0 10px 25px rgba(0,45,98,0.15); }
+        .info-card h4 { color: #D4AF37; font-size: 24px; margin: 0 0 20px 0; font-weight: 700; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 10px; }
+        .form-container-box { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+        .form-group { margin-bottom: 15px; display: flex; flex-direction: column; text-align: left; }
+        .form-group label { font-size: 15px; font-weight: bold; color: #002D62; margin-bottom: 6px; }
+        .form-control { width: 100%; padding: 10px 14px; font-size: 15px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; }
+        .form-control:focus { outline: none; border-color: #D4AF37; box-shadow: 0 0 0 3px rgba(212,175,55,0.2); }
+        .btn-submit { background: #D4AF37; color: #002D62; font-size: 18px; font-weight: bold; width: 100%; padding: 14px; border: none; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 10px rgba(212,175,55,0.3); transition: transform 0.1s; display: flex; justify-content: center; align-items: center; gap: 10px; font-family: inherit; margin-top: 10px; }
+        .btn-submit:active { transform: scale(0.98); }
     </style>
 </head>
 <body>
@@ -53,11 +65,8 @@
         <p style="color: #cbd5e1; font-size: 32px; letter-spacing: 5px;">極致味蕾與海景的奢華提案</p>
         <div style="width: 100px; height: 5px; background: #D4AF37; margin: 40px auto;"></div>
         <p style="color: #94a3b8; font-size: 22px; margin-bottom: 35px;">搭乘星宇航空 · 全程浪漫五星海景房 · 頂級饕客美饌巡禮</p>
-        
-        <a href="https://docs.google.com/spreadsheets/d/1wVjTZJVP1VbWfO_DOWdShpjMZZ9TUGwK3QFMqSgKAEM/edit?gid=743106274#gid=743106274" 
-           target="_blank" 
-           style="display: inline-block; background: #D4AF37; color: #002D62; font-size: 22px; font-weight: bold; padding: 15px 40px; border-radius: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(212,175,55,0.4); font-family: 'Noto Sans TC', sans-serif;">
-           <i class="fa-solid fa-file-signature"></i> 立即填寫團體報名表
+        <a href="#booking-section" style="display: inline-block; background: #D4AF37; color: #002D62; font-size: 22px; font-weight: bold; padding: 15px 40px; border-radius: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(212,175,55,0.4);">
+           <i class="fa-solid fa-arrow-down"></i> 下滑進入：延伸團體報名表
         </a>
     </div>
 </div>
@@ -126,7 +135,7 @@
                     <h4>SPA LAND 汗蒸幕</h4>
                     <p>進駐頂級新世界百貨，發放30,000韓元公費，盡情享受道地下午茶點心。</p>
                 </div>
-                <a href="https://maps.google.com/?q=Spa+Land+Centum+City" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
+                <a href="https://maps.google.com/?q=Centum+City+Spa+Land" target="_blank" class="btn-map"><i class="fa-solid fa-location-dot"></i> 導航景點</a>
             </div>
         </div>
     </div>
@@ -137,10 +146,10 @@
         <span class="badge">浪漫絕景特輯</span>
         <h2 style="font-size: 40px; color: #002D62; margin: 10px 0; font-weight: 700;">青沙浦踏石步道 & 天空膠囊列車</h2>
         <h3>漫步雲端與金橘色夕陽相遇</h3>
-        <p>傍晚首先挑戰向海面延伸 70 公尺的踏石天空步道，踏在透明強化玻璃上俯瞰海浪。隨後搭乘小巧可愛的海岸觀光膠囊列車（尾浦至青沙浦），獨享晚霞將整片東海染成浪漫金橘色的魔幻時刻。</p>
+        <p>傍晚首先挑戰向海面延伸 70 公尺的踏石天空步道，踏在透明強化玻璃上俯瞰海浪。隨後搭乘小巧可愛的海岸觀光膠囊列車（尾浦至青沙浦），編織浪漫金橘色的魔幻時刻。</p>
         <div style="margin-top: 10px; display: flex; gap: 10px;">
             <a href="https://maps.google.com/?q=Cheongsapo+Daritdol+Observatory" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：踏石天空步道</a>
-            <a href="https://maps.google.com/?q=Haeundae+Blueline+Park" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：膠囊列車尾浦站</a>
+            <a href="https://maps.google.com/?q=Haeundae+Blueline+Park+Mipo+Station" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：膠囊列車尾浦站</a>
         </div>
     </div>
     <div class="image-container">
@@ -158,14 +167,14 @@
                         <h4 style="font-size: 24px; color: #002D62; margin: 0 0 10px 0; font-weight:700;"><i class="fa-solid fa-building"></i> 釜山 X THE SKY 摩天樓</h4>
                         <p style="font-size: 16px; margin: 0;">直達海雲台頂端天際線！挑戰透明玻璃天橋空中漫步，飽覽廣安大橋震撼全景。</p>
                     </div>
-                    <a href="https://maps.google.com/?q=BUSAN+X+the+SKY" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
+                    <a href="https://maps.google.com/?q=Busan+X+the+Sky" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
                 </div>
                 <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 5px solid #D4AF37; display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <h4 style="font-size: 24px; color: #D4AF37; margin: 0 0 10px 0; font-weight:700;"><i class="fa-solid fa-palette"></i> ARTE MUSEUM & 松島跨海纜車</h4>
                         <p style="font-size: 16px; margin: 0;">走進聲光效果震撼的數位藝術展館。隨後前往松島搭乘全韓首條跨海纜車，漫步天空步道。</p>
                     </div>
-                    <a href="https://maps.google.com/?q=Songdo+Marine+Cable+Car" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
+                    <a href="https://maps.google.com/?q=Arte+Museum+Busan" target="_blank" class="btn-map" style="white-space: nowrap; margin-left: 15px;"><i class="fa-solid fa-location-dot"></i> 導航</a>
                 </div>
             </div>
             <div class="image-wrapper">
@@ -181,14 +190,14 @@
         <div class="two-column">
             <div>
                 <h3>走進韓國馬丘比丘與潮流中心</h3>
-                <p>早晨漫步於依山而建、色彩斑斕的【甘川洞文化村】，尋找經典的小王子壁畫。中午至富平罐頭市場發放30,000韓元公費讓團員自由品嚐地道小吃！下午直奔釜山潮流心臟——西面商圈與樂天百貨瘋狂逛街，享受愜意時光。</p>
+                <p>早晨漫步於依山而建、色彩斑斕的【甘川洞文化村】，尋找經典的小王子壁畫。中午至富平罐頭市場發放30,000韓元公費讓團員自由品嚐地道小吃！下午直奔西面商圈與樂天百貨瘋狂逛街。</p>
                 <div style="margin-bottom: 20px; display: flex; gap: 10px;">
                     <a href="https://maps.google.com/?q=Gamcheon+Culture+Village" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：甘川洞文化村</a>
                     <a href="https://maps.google.com/?q=Seomyeon+Station" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：西面商圈中心</a>
                 </div>
                 <ul style="padding-left: 20px; font-size: 18px;">
                     <li><strong>潮流購物：</strong>西面地下街精品、樂天百貨免稅店、田浦咖啡香</li>
-                    <li><strong>當晚奢宴：</strong>【讚味王】厚切3.5cm韓式烤五花肉搭配清爽水芹菜+濃郁泡菜鍋</li>
+                    <li><strong>當晚奢宴：</strong>【讚味王】厚切韓式烤五花肉搭配清爽水芹菜+濃郁泡菜鍋</li>
                 </ul>
             </div>
             <div class="image-wrapper">
@@ -207,12 +216,12 @@
             </div>
             <div>
                 <h3>洛東江風光與經典電影廣場巡禮</h3>
-                <p>上午先到經典的國際市場與 BIFF 電影廣場進行最後伴手禮狂購。隨後前往【洛東江鐵道腳踏車】，四人一輛在平緩舊鐵道上破風前行，欣賞遼闊無際的江畔風光。緊接著造訪由廢棄森林隧道改建、長年清涼舒爽的【紅酒洞窟】。</p>
+                <p>上午先到經典的國際市場與 BIFF 電影廣場進行最後伴手禮狂購。隨後前往【洛東江鐵道腳踏車】，四人一輛在平緩舊鐵道上破風前行。緊接著造訪由廢棄鐵道隧道改建、長年清涼舒爽的【紅酒洞窟】。</p>
                 <div style="margin-bottom: 20px; display: flex; gap: 10px;">
-                    <a href="https://maps.google.com/?q=Gimhae+Nakdonggang+Rail+Bike" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：洛東江鐵道單車</a>
+                    <a href="https://maps.google.com/?q=Gimhae+Nakdonggang+Rail+Park" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：洛東江鐵道單車</a>
                     <a href="https://maps.google.com/?q=BIFF+Square" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> 📍 導航：BIFF 廣場</a>
                 </div>
-                <p style="font-size: 18px;"><strong>返程航班：</strong>星宇航空 JX903 (18:55 - 20:15) 珍重賦歸</p>
+                <p style="font-size: 18px;"><strong>返程航班：</strong>星宇航空 JX903 (18:55 - 20:15) 批次賦歸</p>
             </div>
         </div>
     </div>
@@ -233,22 +242,22 @@
                 <tr>
                     <td><strong>D1 晚餐【潛水艇】</strong></td>
                     <td>重量級霸氣龍蝦、原隻一隻雞、痛風級澎湃海鮮鍋、香噴噴石鍋飯</td>
-                    <td>精緻豪華套餐 (約 NT$ 3,376)</td>
+                    <td>精緻豪華套餐</td>
                 </tr>
                 <tr>
                     <td><strong>D2 午餐【韓國總統府主廚】</strong></td>
                     <td>宮廷養生鮑魚鍋巴人參燉雞湯，或濃郁醇厚鮑魚牛骨湯 (二選一)</td>
-                    <td>國宴級滋補料理 (約 NT$ 464)</td>
+                    <td>國宴級滋補料理</td>
                 </tr>
                 <tr>
                     <td><strong>D3 午餐【影島海女村】</strong></td>
                     <td>現撈極鮮海膽海苔卷飯、Q彈大蒸章魚、鮮甜無比海鮮拉麵</td>
-                    <td>地道海畔路邊攤風味 (約 NT$ 528)</td>
+                    <td>地道海畔風味</td>
                 </tr>
                 <tr>
                     <td><strong>D3 晚餐【大勢是真海】</strong></td>
                     <td>豪邁鮮美蒸紅蟹吃到飽、火烤大鮮蝦無限量供應、蟹膏炒飯、季節小菜</td>
-                    <td>狂暴海鮮盛宴 (約 NT$ 1,372)</td>
+                    <td>狂暴海鮮盛宴</td>
                 </tr>
             </tbody>
         </table>
@@ -263,7 +272,7 @@
             <div>
                 <h4 style="color: #D4AF37; font-size: 24px; margin: 0 0 10px 0;"><i class="fa-solid fa-hotel"></i> Day 1 - Day 2 住宿</h4>
                 <p style="color: #fff; font-size: 18px; margin-bottom: 15px;"><strong>海雲台 Raviens Maison de Hotel</strong><br>下樓即是蔚藍沙灘，清晨開窗獨享海雲台海平線日出絕景。</p>
-                <a href="https://maps.google.com/?q=Haeundae+Hwangnam+Maison" target="_blank" class="btn-map" style="background:#D4AF37; color:#002D62;"><i class="fa-solid fa-location-dot"></i> 打開導航</a>
+                <a href="https://maps.google.com/?q=Haeundae+Beach" target="_blank" class="btn-map" style="background:#D4AF37; color:#002D62;"><i class="fa-solid fa-location-dot"></i> 打開導航</a>
             </div>
             <div>
                 <h4 style="color: #D4AF37; font-size: 24px; margin: 0 0 10px 0;"><i class="fa-solid fa-hotel"></i> Day 3 - Day 4 住宿</h4>
@@ -281,19 +290,19 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                 <div style="background:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                     <h4 style="color:#002D62; font-size:20px; margin:0 0 10px 0;"><i class="fa-solid fa-passport"></i> 證件與簽證</h4>
-                    <p style="font-size:16px; margin:0;">確認護照效期需滿 6 個月以上。韓國目前免簽，但請於出發前 3 天內上網填寫「K-ETA」或紙本入境卡。</p>
+                    <p style="font-size:16px; margin:0;">確認護照效期需滿 6 個月以上。韓國目前免簽，但請於出發前上網填寫入境健康檢疫卡。</p>
                 </div>
                 <div style="background:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                     <h4 style="color:#002D62; font-size:20px; margin:0 0 10px 0;"><i class="fa-solid fa-luggage-cart"></i> 星宇行李托運</h4>
-                    <p style="font-size:16px; margin:0;">精品星宇航空每人享有免費托運行李 23 公斤，隨身手提行李 7 公斤。預留充足空間給精美伴手禮！</p>
+                    <p style="font-size:16px; margin:0;">精品星宇航空每人享有免費托運行李，隨身手提行李限重規範。預留充足空間給伴手禮！</p>
                 </div>
                 <div style="background:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                     <h4 style="color:#002D62; font-size:20px; margin:0 0 10px 0;"><i class="fa-solid fa-cloud-sun-rain"></i> 天氣與防風穿著</h4>
-                    <p style="font-size:16px; margin:0;">釜山沿海地區（特別是膠囊列車、踏石步道與遊艇）海風較大。建議攜帶一件質感防風薄外套，方便洋蔥式穿搭。</p>
+                    <p style="font-size:16px; margin:0;">釜山沿海地區海風較大。建議攜帶一件質感防風外套。</p>
                 </div>
                 <div style="background:#fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                     <h4 style="color:#002D62; font-size:20px; margin:0 0 10px 0;"><i class="fa-solid fa-money-bill-transfer"></i> 換匯與消費習慣</h4>
-                    <p style="font-size:16px; margin:0;">韓國幾乎全境皆可刷卡。建議在台灣先換好基本小額韓元現金（用於罐頭市場小吃店與路邊攤），其餘消費大筆刷卡更划算。</p>
+                    <p style="font-size:16px; margin:0;">韓國幾乎全境皆可刷卡。建議先換好基本小額韓元現金（用於市場自由食小吃店）。</p>
                 </div>
             </div>
             <div style="background: linear-gradient(135deg, #002D62 0%, #00122e 100%); color:white; padding:40px; border-radius:15px; text-align:center; display:flex; flex-direction:column; justify-content:center;">
@@ -303,6 +312,106 @@
         </div>
     </div>
 </div>
+
+<div id="booking-section" class="slide-container" style="background: linear-gradient(to bottom, #ffffff, #f8fafc); justify-content: start;">
+    <h2 class="slide-title">📝 團體報名資料延伸填寫表</h2>
+    <div class="content-area">
+        <div class="extended-layout">
+            
+            <div class="info-card">
+                <h4><i class="fa-solid fa-chart-pie"></i> 報名統計說明</h4>
+                <p style="color: #cbd5e1; font-size: 15px;">本表單已進行技術延伸，團員在此輸入的資料將會引導生成標準化格式，一鍵轉發至 LINE 群組中，便於發起人即時登錄至後台 Excel 統計看板。</p>
+                <div style="margin: 25px 0; padding: 15px; background: rgba(255,255,255,0.08); border-radius: 8px; text-align: left;">
+                    <p style="color: #D4AF37; font-size: 16px; font-weight: bold; margin-bottom: 8px;"><i class="fa-solid fa-circle-info"></i> 填表填寫須知：</p>
+                    <ul style="color: #fff; font-size: 14px; padding-left: 20px; margin: 0; line-height: 1.5;">
+                        <li>主要聯絡人必須填寫真實全名</li>
+                        <li>隨行人數系統會自動計算總合</li>
+                        <li>如有素食、嬰兒床需求請在備註註明</li>
+                    </ul>
+                </div>
+                <p style="color: #94a3b8; font-size: 13px; line-height: 1.4;"><i class="fa-solid fa-shield-halved"></i> 本系統基於 GitHub 靜態安全網頁架構開發，不經由第三方伺服器，全力保障您的聯絡隱私安全。</p>
+            </div>
+
+            <div class="form-container-box">
+                <form id="busanForm" onsubmit="sendToLine(event)">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-plane-departure"></i> 1. 請選擇您的出發批次</label>
+                        <select id="batch" class="form-control" required>
+                            <option value="" disabled selected>-- 請選擇出發批次 --</option>
+                            <option value="第一批 (五/六出發)">第一批 (五/六出發)</option>
+                            <option value="第二批 (日/一出發)">第二批 (日/一出發)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-user"></i> 2. 主要聯絡人 / 代表姓名</label>
+                        <input type="text" id="leader" class="form-control" placeholder="請輸入您的真實姓名" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-phone"></i> 3. 主要聯絡人電話</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="例如：0912-345678" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-users"></i> 4. 本次同行團員姓名（隨行人員）</label>
+                        <input type="text" id="members" class="form-control" placeholder="若無隨行團員請填「無」，多人請用頓號隔開" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-calculator"></i> 5. 隨行人數（不含聯絡人自己）</label>
+                        <select id="memberCount" class="form-control" required>
+                            <option value="0">0 人（僅我自己出發）</option>
+                            <option value="1">1 人</option>
+                            <option value="2">2 人</option>
+                            <option value="3">3 人</option>
+                            <option value="4">4 人以上</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-comment-dots"></i> 6. 特殊需求備註 (如房型 / 飲食習慣)</label>
+                        <textarea id="notes" class="form-control" rows="2" placeholder="例如：需要一大床房 / 一位全素食"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-brand fa-line"></i> 確認送出報名 (傳送至 LINE 群組)
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+function sendToLine(event) {
+    event.preventDefault();
+    
+    var batch = document.getElementById('batch').value;
+    var leader = document.getElementById('leader').value;
+    var phone = document.getElementById('phone').value;
+    var members = document.getElementById('members').value;
+    var memberCount = parseInt(document.getElementById('memberCount').value);
+    var notes = document.getElementById('notes').value || "無";
+    
+    var totalPeople = memberCount + 1;
+    
+    var message = "🌟【2026 釜山尊爵團報名通知】🌟\n" +
+                  "━━━━━━━━━━━━━━━━━━━\n" +
+                  "📌 出發批次：" + batch + "\n" +
+                  "👤 主要聯絡人：" + leader + "\n" +
+                  "📞 聯絡電話：" + phone + "\n" +
+                  "👥 隨行團員：" + members + "\n" +
+                  "📊 報名總人數：" + totalPeople + " 人\n" +
+                  "📝 房型與特殊備註：" + notes + "\n" +
+                  "━━━━━━━━━━━━━━━━━━━\n" +
+                  "※ 報名資料已由 GitHub 網頁成功發送！";
+    
+    var lineUrl = "https://line.me/R/msg/text/?" + encodeURIComponent(message);
+    window.open(lineUrl, '_blank');
+}
+</script>
 
 </body>
 </html>
