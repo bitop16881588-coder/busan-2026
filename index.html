@@ -16,7 +16,7 @@
         .slide-container::before { content: ""; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%); z-index: 0; }
         .slide-container > * { z-index: 1; }
         h1 { font-size: 80px; color: #002D62; margin: 0; line-height: 1.1; font-weight: 700; }
-        .slide-title { font-size: 44px; color: #002D62; margin-bottom: 40px; border-left: 10px solid #D4AF37; padding-left: 25px; }
+        .slide-title { font-size: 44px; color: #002D62; margin-bottom: 40px; border-left: 10px solid #D4AF37; padding-left: 25px; font-weight: 700; }
         h3 { font-size: 32px; color: #D4AF37; margin-bottom: 15px; font-weight: 700; }
         p, li { font-size: 20px; line-height: 1.6; color: #475569; }
         .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; }
@@ -24,8 +24,10 @@
         .image-wrapper { border-radius: 15px; overflow: hidden; height: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); border: 1px solid #e2e8f0; }
         .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
         .tiled-content { display: flex; gap: 30px; width: 100%; align-items: stretch; }
-        .tile { flex: 1; background: #f8fafc; padding: 40px; border-radius: 15px; border-bottom: 5px solid #D4AF37; text-align: center; }
-        .tile .icon { font-size: 50px; color: #002D62; margin-bottom: 20px; }
+        .tile { flex: 1; background: #f8fafc; padding: 30px; border-radius: 15px; border-bottom: 5px solid #D4AF37; text-align: center; }
+        .tile .icon { font-size: 45px; color: #002D62; margin-bottom: 15px; }
+        .tile h4 { font-size: 24px; color: #002D62; margin: 0 0 10px 0; font-weight: 700; }
+        .tile p { font-size: 16px; line-height: 1.5; margin: 0; }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th { background: #002D62; color: #fff; padding: 20px; text-align: left; font-size: 22px; }
         td { padding: 20px; border-bottom: 1px solid #e2e8f0; font-size: 20px; }
@@ -38,6 +40,7 @@
         .timeline-item { width: 18%; text-align: center; position: relative; z-index: 1; }
         .timeline-item::after { content: ""; position: absolute; top: 41px; left: 50%; transform: translateX(-50%); width: 25px; height: 25px; background: #D4AF37; border-radius: 50%; border: 5px solid #fff; }
         .timeline-item h3 { color: #002D62; margin-bottom: 60px; }
+        .badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -47,7 +50,7 @@
         <h1 style="color: #D4AF37; margin-bottom: 20px;">2026 釜山尊爵五日之旅</h1>
         <p style="color: #cbd5e1; font-size: 32px; letter-spacing: 5px;">極致味蕾與海景的奢華提案</p>
         <div style="width: 100px; height: 5px; background: #D4AF37; margin: 40px auto;"></div>
-        <p style="color: #94a3b8;">搭乘星宇航空 · 全程五星海景房住宿 · 頂級海鮮饗宴</p>
+        <p style="color: #94a3b8; font-size: 22px;">搭乘星宇航空 · 全程浪漫五星海景房 · 頂級饕客美饌巡禮</p>
     </div>
 </div>
 
@@ -56,26 +59,26 @@
     <div class="content-area">
         <div class="timeline-layout">
             <div class="timeline-line"></div>
-            <div class="timeline-item"><h3>Day 1</h3><p>啟航 · 遊艇之夜<br>龍蝦一隻雞盛宴</p></div>
-            <div class="timeline-item"><h3>Day 2</h3><p>動感 · 滑車冒險<br>膠囊列車夕陽賞</p></div>
-            <div class="timeline-item"><h3>Day 3</h3><p>雲端 · 摩天藝文<br>紅蟹吃到飽慶典</p></div>
-            <div class="timeline-item"><h3>Day 4</h3><p>文化 · 經典巡禮<br>甘川洞與西面購物</p></div>
-            <div class="timeline-item"><h3>Day 5</h3><p>漫步 · 鐵道風光<br>紅酒洞窟與賦歸</p></div>
+            <div class="timeline-item"><h3>Day 1</h3><p>夢幻啟航 · 遊艇煙火<br>【潛水艇】龍蝦鍋</p></div>
+            <div class="timeline-item"><h3>Day 2</h3><p>極限動感 · 舒壓汗蒸<br>夕陽膠囊列車風光</p></div>
+            <div class="timeline-item"><h3>Day 3</h3><p>雲端震撼 · 沉浸光影<br>鮮紅蟹烤蝦宴吃到飽</p></div>
+            <div class="timeline-item"><h3>Day 4</h3><p>山城文化 · 商圈極致購物<br>水芹菜厚切五花肉</p></div>
+            <div class="timeline-item"><h3>Day 5</h3><p>江畔鐵道單車漫遊<br>紅酒洞窟 · 珍重賦歸</p></div>
         </div>
     </div>
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">第一天：夢幻啟航與廣安夜色</h2>
+    <h2 class="slide-title">第一天：夢幻啟航與璀璨廣安夜色</h2>
     <div class="content-area">
         <div class="two-column">
             <div>
-                <h3>璀璨遊艇煙火</h3>
-                <p>搭乘星宇航空抵達後，展開奢華序幕。登上私人遊艇巡航廣安里海域，在精緻點心與飲料陪伴下，欣賞海面上綻放的煙火與壯麗大橋景緻。</p>
-                <ul style="padding-left: 20px;">
-                    <li><strong>航班：</strong>星宇 JX902 (14:45-17:55)</li>
-                    <li><strong>體驗：</strong>近海遊艇巡航 (飲料、甜點、煙火)</li>
-                    <li><strong>晚餐：</strong>龍蝦一隻雞海鮮鍋 + 石鍋飯</li>
+                <h3>私人遊艇煙火奢華序幕</h3>
+                <p>搭乘精品星宇航空豪華客機啟航。入夜後登上私人遊艇緩緩航行於廣安里與海雲台一帶海域，在精緻點心與飲料陪伴下，遠眺廣安大橋與城市天際線，獨享海面上綻放的璀璨煙火秀。</p>
+                <ul style="padding-left: 20px; font-size: 18px;">
+                    <li><strong>航班資訊：</strong>星宇航空 JX902 (14:45 - 17:55)</li>
+                    <li><strong>頂級尊榮：</strong>釜山近海遊艇巡航、精緻飯店 Check-in</li>
+                    <li><strong>奢華美饌：</strong>【潛水艇】龍蝦一隻雞海鮮鍋 + 石鍋飯</li>
                 </ul>
             </div>
             <div class="image-wrapper">
@@ -86,22 +89,26 @@
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">第三天：雲端視野與光影藝術</h2>
+    <h2 class="slide-title">第二天：動感東海岸與奢華汗蒸舒壓</h2>
     <div class="content-area">
         <div class="tiled-content">
-            <div style="flex:1;">
-                <div class="image-wrapper" style="height: 300px; margin-bottom: 20px;">
-                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800" alt="釜山高樓城市">
-                </div>
-                <h3>X THE SKY 摩天樓</h3>
-                <p>登上98層高樓，360度俯瞰釜山城市天際線與海雲台海灘。</p>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-car-burst"></i></div>
+                <span class="badge">戶外速度體驗</span>
+                <h4>Skyline Luge 滑車</h4>
+                <p>搭乘纜車登上山頂，親自操控滑車沿蜿蜒專用賽道衝刺，飽覽周邊絕美海景，熱血體驗兩次！</p>
             </div>
-            <div style="flex:1;">
-                <div class="image-wrapper" style="height: 300px; margin-bottom: 20px;">
-                    <img src="https://images.unsplash.com/photo-1554147090-e1221a04a025?w=800" alt="數位藝術光影">
-                </div>
-                <h3>ARTE MUSEUM</h3>
-                <p>沉浸式媒體藝術，透過聲光投影，打造如幻似真的夢幻場景。</p>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-gopuram"></i></div>
+                <span class="badge">臨海佛教聖地</span>
+                <h4>海東龍宮寺</h4>
+                <p>建於1376年高麗時代的岩壁佛寺。沿108階石階散步，近距離聆聽驚濤拍岸，欣賞壯闊太平洋。</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-hot-tub-person"></i></div>
+                <span class="badge">1000米天然溫泉</span>
+                <h4>SPA LAND 汗蒸幕</h4>
+                <p>進駐頂級新世界百貨，設多座特色主題桑拿房，特別發放30,000韓元公費，盡情享受道地下午茶點心。</p>
             </div>
         </div>
     </div>
@@ -109,10 +116,11 @@
 
 <div class="slide-container bleed-image-layout">
     <div class="bleed-text-side">
-        <h2 class="slide-title" style="border:none; padding:0; margin-bottom:20px;">海雲台浪漫夕陽</h2>
-        <h3>天空膠囊列車</h3>
-        <p>這是一場專屬於您的時光旅行。搭乘色彩繽紛可愛的小火車，在尾浦至青沙浦的海岸線上緩緩移動。</p>
-        <p>傍晚時分，整片海洋被餘暉染成金橘色，是釜山最浪漫的取景地。包含青沙浦踏石步道，體驗踩在透明玻璃上的高空快感。</p>
+        <span class="badge" style="width: fit-content;">浪漫絕景特輯</span>
+        <h2 style="font-size: 40px; color: #002D62; margin: 10px 0; font-weight: 700;">青沙浦踏石步道 & 天空膠囊列車</h2>
+        <h3>漫步雲端與金橘色夕陽相遇</h3>
+        <p>傍晚首先挑戰向海面延伸 70 公尺的踏石天空步道，踏在透明強化玻璃上俯瞰海浪。隨後搭乘小巧可愛的海岸觀觀膠囊列車（尾浦至青沙浦），慵懶依偎在車廂內，獨享晚霞將整片東海染成浪漫金橘色的魔幻時刻。</p>
+        <p style="font-size: 18px; color: #64748b;"><i class="fa-solid fa-moon"></i> 當晚限定宵夜：每房加碼大啖一盒知名【PURADAK CHICKEN】韓式炸雞！</p>
     </div>
     <div class="image-container">
         <img class="bleed-image-side" src="https://images.unsplash.com/photo-1620127258536-0427670732df?w=800" alt="天空膠囊列車夕陽">
@@ -120,35 +128,37 @@
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">極致味蕾：鮮紅蟹與海鮮巡禮</h2>
+    <h2 class="slide-title">第三天：360度高空震撼與沉浸式光影美學</h2>
     <div class="content-area">
         <div class="two-column">
-            <div>
-                <h3>影島海女村與紅蟹</h3>
-                <p>體驗最地道的海洋風味！午餐享用影島海女村現採的海膽海苔卷與蒸章魚。晚餐則迎來重量級響宴——「大勢是真海」蒸紅蟹吃到飽。</p>
-                <ul style="padding-left: 20px;">
-                    <li><strong>午餐：</strong>海膽飯+蒸章魚+海鮮拉麵</li>
-                    <li><strong>晚餐：</strong>蒸紅蟹+烤鮮蝦無限量供應</li>
-                    <li><strong>亮點：</strong>飽滿蟹肉搭配濃郁蟹膏炒飯</li>
-                </ul>
+            <div class="tiled-content" style="flex-direction: column; gap: 20px;">
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 5px solid #002D62;">
+                    <h4 style="font-size: 24px; color: #002D62; margin: 0 0 10px 0; font-weight:700;"><i class="fa-solid fa-building"></i> 釜山 X THE SKY 摩天樓</h4>
+                    <p style="font-size: 16px; margin: 0;">直達海雲台頂端天際線！挑戰透明玻璃天橋空中漫步，飽覽廣安大橋震撼全景，並欣賞98樓炫麗的「天空波浪」光影秀。</p>
+                </div>
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 5px solid #D4AF37;">
+                    <h4 style="font-size: 24px; color: #D4AF37; margin: 0 0 10px 0; font-weight:700;"><i class="fa-solid fa-palette"></i> ARTE MUSEUM & 松島跨海纜車</h4>
+                    <p style="font-size: 16px; margin: 0;">走進聲光效果震撼的沉浸式數位藝術宇宙。隨後前往松島搭乘全韓首條跨海纜車（水晶透明地板），並漫步橫跨礁岩的龍宮天空步道。</p>
+                </div>
             </div>
             <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=800" alt="海鮮大餐">
+                <img src="https://images.unsplash.com/photo-1554147090-e1221a04a025?w=800" alt="數位藝術光影">
             </div>
         </div>
     </div>
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">第四、五天：文化風情與珍重賦歸</h2>
+    <h2 class="slide-title">第四天：繽紛山城山景與瘋狂商圈購物</h2>
     <div class="content-area">
         <div class="two-column">
             <div>
-                <h3>甘川洞與江邊鐵道</h3>
-                <p>走訪「韓國的馬丘比丘」甘川洞文化村，漫步彩色房屋交織的迷宮巷弄。最後一天騎乘洛東江鐵道腳踏車，在涼爽江風吹拂下，為尊爵五日遊畫下完美句點。</p>
-                <ul style="padding-left: 20px;">
-                    <li><strong>景點：</strong>甘川洞文化村、西面商圈、國際市場</li>
-                    <li><strong>體驗：</strong>洛東江鐵道單車、紅酒洞窟品醇</li>
+                <h3>走進韓國馬丘比丘與潮流中心</h3>
+                <p>早晨漫步於依山而建、色彩斑斕的【甘川洞文化村】，尋找經典的小王子與精緻巷弄彩繪。中午至富平罐頭市場發放30,000韓元現金讓團員自由品嚐地道小吃！下午直奔釜山潮流心臟——西面商圈與樂天百貨瘋狂逛街，並在文青感爆棚的田浦咖啡街享受愜意時光。</p>
+                <ul style="padding-left: 20px; font-size: 18px;">
+                    <li><strong>文化巡禮：</strong>甘川洞迷宮弄巷藝術、繽紛階梯屋景</li>
+                    <li><strong>潮流購物：</strong>西面地下街精品、樂天百貨免稅店、田浦咖啡香</li>
+                    <li><strong>當晚奢宴：</strong>【讚味王】厚切3.5cm韓式烤五花肉搭配清爽水芹菜+濃郁泡菜鍋</li>
                 </ul>
             </div>
             <div class="image-wrapper">
@@ -159,39 +169,71 @@
 </div>
 
 <div class="slide-container">
-    <h2 class="slide-title">老饕精選：全程頂級餐食清單 (即時匯率：0.0211)</h2>
+    <h2 class="slide-title">第五天：江畔鐵道慢遊與神祕紅酒洞窟</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=800" alt="海鮮大餐">
+            </div>
+            <div>
+                <h3>洛東江風光與經典電影廣場巡禮</h3>
+                <p>上午先到經典的國際市場與 BIFF 電影廣場進行最後伴手禮狂購。隨後前往【洛東江鐵道腳踏車】，四人一輛在平緩舊鐵道上破風前行，欣賞遼闊無際的江畔風光。緊接著造訪由廢棄森林隧道改建、長年清涼舒爽的【紅酒洞窟】，漫步在魔幻藝術燈光長廊中。</p>
+                <ul style="padding-left: 20px; font-size: 18px;">
+                    <li><strong>午後盛宴：</strong>【國家代表】安東起司燉雞 + 酥炸麵包蝦</li>
+                    <li><strong>返程航班：</strong>星宇航空 JX903 (18:55 - 20:15) 珍重賦歸</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">味蕾極致：全程奢華美食星級矩陣</h2>
     <div class="content-area">
         <table>
             <thead>
                 <tr>
-                    <th>特色餐點名稱</th>
-                    <th>主要食材內容</th>
-                    <th>預估台幣換算 (每人)</th>
+                    <th>奢華餐域名稱</th>
+                    <th>國宴級與頂級頂配食材內容</th>
+                    <th>每人預估預算換算 (即時匯率: 0.0211)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>皇帝潛水艇</td>
-                    <td>龍蝦、一隻雞、痛風海鮮、石鍋飯</td>
-                    <td>約 NT$ 3,376</td>
+                    <td><strong>D1 晚餐【潛水艇】</strong></td>
+                    <td>重量級霸氣龍蝦、原隻一隻雞、痛風級澎湃海鮮鍋、香噴噴石鍋飯</td>
+                    <td>精緻豪華套餐 (約 NT$ 3,376)</td>
                 </tr>
                 <tr>
-                    <td>大勢是真海</td>
-                    <td>蒸紅蟹、烤鮮蝦吃到飽、蟹膏炒飯</td>
-                    <td>約 NT$ 1,372</td>
+                    <td><strong>D2 午餐【韓國總統府主廚】</strong></td>
+                    <td>宮廷養生鮑魚鍋巴人參燉雞湯，或濃郁醇厚鮑魚牛骨湯 (二選一)</td>
+                    <td>國宴級滋補料理 (約 NT$ 464)</td>
                 </tr>
                 <tr>
-                    <td>韓國總統府主廚</td>
-                    <td>鮑魚鍋巴人參燉雞、鮑魚牛骨湯</td>
-                    <td>約 NT$ 464</td>
+                    <td><strong>D3 午餐【影島海女村】</strong></td>
+                    <td>現撈極鮮海膽海苔卷飯、Q彈大蒸章魚、鮮甜無比海鮮拉麵</td>
+                    <td>地道海畔路邊攤風味 (約 NT$ 528)</td>
                 </tr>
                 <tr>
-                    <td>讚味王烤肉</td>
-                    <td>熟成五花肉、特色水芹菜、泡菜鍋</td>
-                    <td>約 NT$ 464</td>
+                    <td><strong>D3 晚餐【大勢是真海】</strong></td>
+                    <td>豪邁鮮美蒸紅蟹吃到飽、火烤大鮮蝦無限量供應、蟹膏炒飯、季節小菜</td>
+                    <td>狂暴海鮮盛宴 (約 NT$ 1,372)</td>
                 </tr>
             </tbody>
         </table>
+    </div>
+</div>
+
+<div class="slide-container" style="background-image: linear-gradient(rgba(0, 45, 98, 0.5), rgba(0, 45, 98, 0.6)), url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1200'); background-size: cover; background-position: center; color: white;">
+    <div style="text-align: center; width: 100%; margin: auto 0;">
+        <h2 style="font-size: 65px; color: #D4AF37; font-weight: 700; margin-bottom: 20px;">保證全程入住 · 奢華海景房</h2>
+        <div style="width: 150px; height: 4px; background: #D4AF37; margin: 30px auto;"></div>
+        <p style="font-size: 26px; color: #f1f5f9; max-width: 1000px; margin: 0 auto; line-height: 1.6; font-weight: 400;">
+            <strong>D1 - D2：海雲台 Raviens Maison de Hotel (海景房)</strong><br>
+            下樓即是蔚藍沙灘，清晨開窗獨享海雲台海平線日出絕景。<br><br>
+            <strong>D3 - D4：南浦洞 NORTH HARBOR HOTEL (海景房)</strong><br>
+            臨海港灣頂級視野，璀璨大橋與迷人舊城港口夜景盡收眼底。
+        </p>
     </div>
 </div>
 
